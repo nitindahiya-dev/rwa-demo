@@ -1,21 +1,26 @@
-# RWA Platform
+cd /projects/rwa-demo
 
-A modern **Real-World Asset (RWA) platform** designed to simplify rental property management and enable cryptocurrency-based payments.
+python3 -c 'from pathlib import Path; Path("README.md").write_text("""# RWA Platform
 
-The platform connects **property owners and tenants** through a secure web application while exploring Web3 technologies for rental payments, deposits, and property-related transactions.
+A modern **Real-World Asset (RWA) platform** that demonstrates how real-estate assets can be tokenized, managed, and settled on-chain.
+
+The platform connects **investors, property assets, and blockchain-based settlement** through a responsive web application using MetaMask and Base Sepolia.
 
 ---
 
 ## 🚀 Features
 
-- 🏠 Rental property management
-- 👤 Property owner and tenant workflows
-- 💰 Cryptocurrency payment support
-- 🔐 Secure authentication and authorization
-- 🌐 Web3-ready architecture
-- 📊 Property and rental management
-- 📱 Responsive web interface
-- 🔄 Scalable application architecture
+- 🏠 Tokenized real-estate property
+- 🪙 Restricted RWA token (`VILLA425`)
+- 💰 Blockchain-based investment and settlement
+- 🔐 Wallet whitelist and compliance controls
+- 🧾 On-chain property registry
+- 📊 Investor portfolio and investment history
+- 🔎 Investment transaction details
+- 🛡️ Admin dashboard
+- 🌐 Base Sepolia blockchain integration
+- 📱 Responsive React interface
+- ✅ Smart-contract test coverage
 
 ---
 
@@ -25,36 +30,56 @@ The platform connects **property owners and tenants** through a secure web appli
 
 - React
 - JavaScript
-- Tailwind CSS
 - React Router
+- Tailwind CSS
+- ethers.js
 
-### Backend
+### Blockchain
 
-- Node.js
-- Express.js
-- REST APIs
+- Solidity `0.8.24`
+- Hardhat
+- OpenZeppelin
+- Base Sepolia
+- MetaMask
 
-### Database
+### Smart Contracts
 
-- MongoDB
+- `RestrictedRWAToken`
+- `MockPaymentToken`
+- `Whitelist`
+- `RWARegistry`
+- `RWASettlement`
 
-### Web3
+---
 
-- Cryptocurrency payments
-- Blockchain integration
-- Wallet-based transactions
+## 🔗 Base Sepolia
+
+- **Chain ID:** `84532`
+- **RPC:** `https://sepolia.base.org`
+- **Explorer:** https://sepolia.basescan.org
+
+### Deployed Contracts
+
+| Contract | Address |
+|---|---|
+| Whitelist | `0x2c7C54fB39E4b24C62DfCaAB5324e76BfF33F50d` |
+| Property Token | `0x96D5155D4a33D57c321AeA85A52AD1142D5D54a3` |
+| Payment Token | `0x4128C5AEd430E91bfE707a8A13e876D302E44B4D` |
+| Registry | `0x107BD72042F3c2dCc8960Be4D28F8586b9975a5D` |
+| Settlement | `0x9087479f03968646b98f6bb2a7A4c4566B6eCd75` |
 
 ---
 
 ## 📋 Prerequisites
 
-Make sure you have the following installed:
+Make sure you have installed:
 
 - Node.js 20+
 - npm
 - Git
+- MetaMask
 
-Check your versions:
+Check versions:
 
 ```bash
 node --version
