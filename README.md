@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RWA Platform 
 
 RWA Platform aims to revolutionize the rental property market by integrating cryptocurrency payments into a secure, scalable platform that simplifies transactions for property owners and tenants.
@@ -37,3 +38,6 @@ A secure crypto payment system that allows users to pay rent or make deposits us
 ```
    node 20
 ```
+=======
+# rwa-demo
+>>>>>>> 2e2008d62512dc73cbe1c1e2be75e3058467f7fd
