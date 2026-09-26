@@ -1,0 +1,9 @@
+export const DEPLOYMENT = {
+  "chainId": 84532,
+  "assetId": "0x1a94289bbd6cd054cfca63c001beac873fde17d81b89ff59221c82cd7aeb1cd8",
+  "whitelist": "0x2c7C54fB39E4b24C62DfCaAB5324e76BfF33F50d",
+  "propertyToken": "0x96D5155D4a33D57c321AeA85A52AD1142D5D54a3",
+  "paymentToken": "0x4128C5AEd430E91bfE707a8A13e876D302E44B4D",
+  "registry": "0x107BD72042F3c2dCc8960Be4D28F8586b9975a5D",
+  "settlement": "0x9087479f03968646b98f6bb2a7A4c4566B6eCd75"
+};

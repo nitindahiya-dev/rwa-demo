@@ -1,9 +1,11 @@
+import { WalletProvider } from './web3/WalletContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
 import Properties from './pages/Properties';
 import PropertyDetail from './pages/PropertyDetail';
+import Investments from './pages/Investments';
 import Property3D from './pages/Property3D';
 import About from './pages/About';
 import FAQ from './pages/FAQ';
@@ -14,7 +16,8 @@ import NotFound from './pages/NotFound';
 
 function App() {
   return (
-    <Router>
+    <WalletProvider>
+      <Router>
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">
@@ -22,6 +25,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/properties" element={<Properties />} />
             <Route path="/properties/:id" element={<PropertyDetail />} />
+            <Route path="/investments" element={<Investments />} />
             <Route path="/property-3d" element={<Property3D />} />
             <Route path="/about" element={<About />} />
             <Route path="/privacy" element={<Privacy />} />
@@ -33,7 +37,8 @@ function App() {
         </main>
         <Footer />
       </div>
-    </Router>
+      </Router>
+    </WalletProvider>
   );
 }
 

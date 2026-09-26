@@ -57,6 +57,58 @@ contract RWASettlement is AccessControl, ReentrancyGuard {
         emit TradeCreated(tradeId, buyer, seller);
     }
 
+
+    // Demo-friendly investor purchase flow.
+    // The buyer pays the payment token and receives the RWA token.
+    // The seller must approve this settlement contract beforehand.
+    function buyAsset(
+        address seller,
+        address assetToken,
+        uint256 assetAmount,
+        address paymentToken,
+        uint256 paymentAmount
+    ) external nonReentrant returns (uint256 tradeId) {
+        require(seller != address(0), "Invalid seller");
+        require(assetToken != address(0), "Invalid asset token");
+        require(paymentToken != address(0), "Invalid payment token");
+        require(assetAmount > 0 && paymentAmount > 0, "Invalid amount");
+
+        tradeId = nextTradeId++;
+
+        trades[tradeId] = Trade({
+            buyer: msg.sender,
+            seller: seller,
+            assetToken: assetToken,
+            assetAmount: assetAmount,
+            paymentToken: paymentToken,
+            paymentAmount: paymentAmount,
+            settled: false
+        });
+
+        require(
+            IERC20(assetToken).transferFrom(
+                seller,
+                msg.sender,
+                assetAmount
+            ),
+            "Asset transfer failed"
+        );
+
+        require(
+            IERC20(paymentToken).transferFrom(
+                msg.sender,
+                seller,
+                paymentAmount
+            ),
+            "Payment transfer failed"
+        );
+
+        trades[tradeId].settled = true;
+
+        emit TradeCreated(tradeId, msg.sender, seller);
+        emit TradeSettled(tradeId);
+    }
+
     function settle(uint256 tradeId)
         external
         nonReentrant
