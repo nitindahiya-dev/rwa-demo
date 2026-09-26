@@ -1,1 +1,6 @@
-module.exports = {    plugins: {        tailwindcss: {},        autoprefixer:     {logo:                                                                                 require('./public/mainlogo.svg')},},    };
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
