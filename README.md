@@ -1,43 +1,62 @@
-<<<<<<< HEAD
-# RWA Platform 
+# RWA Platform
 
-RWA Platform aims to revolutionize the rental property market by integrating cryptocurrency payments into a secure, scalable platform that simplifies transactions for property owners and tenants.
+A modern **Real-World Asset (RWA) platform** designed to simplify rental property management and enable cryptocurrency-based payments.
 
-### Support a multi-cryptocurrency payment system.
+The platform connects **property owners and tenants** through a secure web application while exploring Web3 technologies for rental payments, deposits, and property-related transactions.
 
-A secure crypto payment system that allows users to pay rent or make deposits using cryptocurrencies.
+---
 
-### 🔥 Web3 is not a temporary trend - it is the future of the Internet!
+## 🚀 Features
 
-#### 🚀 Are you ready to enter the Web3 Era? Let's explore a decentralized world today!
+- 🏠 Rental property management
+- 👤 Property owner and tenant workflows
+- 💰 Cryptocurrency payment support
+- 🔐 Secure authentication and authorization
+- 🌐 Web3-ready architecture
+- 📊 Property and rental management
+- 📱 Responsive web interface
+- 🔄 Scalable application architecture
 
-### Clone
+---
 
-```
-   git clone https://gitlab.com/cryptobin26/rwa-demo.git
-```
-### Change directory
+## 🛠️ Tech Stack
 
-```
-   cd rwa-demo
-```
-### Install dependencies
+### Frontend
 
-```
-   npm install
-```
+- React
+- JavaScript
+- Tailwind CSS
+- React Router
 
-### Run on localhost
+### Backend
 
-```
-   npm start
-```
+- Node.js
+- Express.js
+- REST APIs
 
-### Recommended node version
+### Database
 
-```
-   node 20
-```
-=======
-# rwa-demo
->>>>>>> 2e2008d62512dc73cbe1c1e2be75e3058467f7fd
+- MongoDB
+
+### Web3
+
+- Cryptocurrency payments
+- Blockchain integration
+- Wallet-based transactions
+
+---
+
+## 📋 Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js 20+
+- npm
+- Git
+
+Check your versions:
+
+```bash
+node --version
+npm --version
+git --version
