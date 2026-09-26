@@ -1,6 +1,3 @@
-cd /projects/rwa-demo
-
-python3 -c 'from pathlib import Path; Path("README.md").write_text("""# RWA Platform
 
 A modern **Real-World Asset (RWA) platform** that demonstrates how real-estate assets can be tokenized, managed, and settled on-chain.
 
