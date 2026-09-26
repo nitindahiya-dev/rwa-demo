@@ -56,3 +56,13 @@ artifacts/
 cache/
 
 .env
+# Local recovery backups
+.recovery-backup/
+
+# Local / generated files
+node_modules/
+build/
+artifacts/
+cache/
+.env
+.recovery-backup/

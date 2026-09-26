@@ -501,8 +501,16 @@ function Investments() {
                             <div className="flex flex-wrap gap-3 mt-5">
 
                               <Link
-                                to={`/properties/${PROPERTY.id}`}
+                                to={`/investments/${investment.tradeId}`}
                                 className="text-sm font-medium text-primary-600 hover:text-primary-700 inline-flex items-center gap-1"
+                              >
+                                View Details
+                                <FiArrowUpRight size={14} />
+                              </Link>
+
+                              <Link
+                                to={`/properties/${PROPERTY.id}`}
+                                className="text-sm font-medium text-secondary-700 hover:text-primary-600 inline-flex items-center gap-1"
                               >
                                 View Property
                                 <FiArrowUpRight size={14} />
