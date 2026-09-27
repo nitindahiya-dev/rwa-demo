@@ -104,7 +104,6 @@ rwa-demo/
 ---
 
 ## �📋 Prerequisites
-## �📋 Prerequisites
 
 Make sure you have installed:
 
