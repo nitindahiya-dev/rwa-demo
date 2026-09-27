@@ -1,9 +1,9 @@
 {
-"name": "DreamProperty",
-"short_name": "DreamProperty",
+"name": "RWA Demo",
+"short_name": "RWA Demo",
 "start_url": "/",
 "display": "standalone",
-"description": "DreamProperty is a modern real estate investment platform combining traditional property investing with cryptocurrency payments, featuring mobile-responsive design, smart contracts, and 3D property visualizations.",
+"description": "RWA Demo is a modern real estate investment platform combining traditional property investing with cryptocurrency payments, featuring mobile-responsive design, smart contracts, and 3D property visualizations.",
 "lang": "english",
 "dir": "ltr",
 "theme_color": "#006eff",

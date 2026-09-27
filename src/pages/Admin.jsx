@@ -141,7 +141,7 @@ export default function Admin() {
         </h1>
 
         <p className="text-secondary-600 mt-2 mb-8">
-          On-chain overview of the DreamProperty RWA platform.
+          On-chain overview of the property RWA platform.
         </p>
 
         {error && (

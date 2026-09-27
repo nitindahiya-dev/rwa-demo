@@ -4,7 +4,7 @@ function Privacy() {
   const sections = [
     {
       title: 'Introduction',
-      content: `This Privacy Policy explains how DreamProperty ("we," "us," or "our") collects, uses, and protects your personal information when you use our platform. We are committed to ensuring the privacy and security of your personal and financial information, including cryptocurrency transactions.`
+      content: `This Privacy Policy explains how RWA Demo ("we," "us," or "our") collects, uses, and protects your personal information when you use our platform. We are committed to ensuring the privacy and security of your personal and financial information, including cryptocurrency transactions.`
     },
     {
       title: 'Information We Collect',
@@ -106,7 +106,7 @@ Continue using our platform after changes constitutes acceptance of the updated 
       title: 'Contact Us',
       content: `For privacy-related inquiries:
 
-Email: privacy@DreamProperty.com
+Email: privacy@rwademo.com
 Address: 123 Privacy Street, Real City, RC 12345
 
 We aim to respond to all inquiries within 48 hours.`

@@ -67,7 +67,44 @@ The platform connects **investors, property assets, and blockchain-based settlem
 
 ---
 
-## 📋 Prerequisites
+## � Project Structure
+
+```text
+rwa-demo/
+├── client/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── hooks/
+│   │   ├── services/
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── package.json
+│   └── vite.config.js
+├── contracts/
+│   ├── RestrictedRWAToken.sol
+│   ├── MockPaymentToken.sol
+│   ├── Whitelist.sol
+│   ├── RWARegistry.sol
+│   └── RWASettlement.sol
+├── scripts/
+│   ├── deploy.js
+│   └── seed.js
+├── test/
+│   └── rwa.test.js
+├── hardhat.config.js
+├── package.json
+├── README.md
+├── .env.example
+└── .gitignore
+```
+
+---
+
+## �📋 Prerequisites
+## �📋 Prerequisites
 
 Make sure you have installed:
 
